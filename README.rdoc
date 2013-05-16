@@ -1,26 +1,8 @@
 = Social Stream: a framework for building social network websites
 
 Social Stream is an engine for Ruby on Rails. It provides a robust and flexible framework
-with {social networking}[http://en.wikipedia.org/wiki/Social_network] features and {activity streams}[http://activitystrea.ms/] for building websites.
+with {social networking}[http://en.wikipedia.org/wiki/Social_network] features and activity streams for building websites.
 
-{<img src="https://secure.travis-ci.org/ging/social_stream.png" />}[http://travis-ci.org/ging/social_stream]
-{<img src="https://codeclimate.com/github/ging/social_stream.png" />}[https://codeclimate.com/github/ging/social_stream]
-
-= Social Stream components
-
-Social Stream is divided into components. Developers can customize their social
-network with the functionalities they need for each case. Current Social Stream distribution includes the following components:
-
-* {Base}[https://github.com/ging/social_stream/tree/master/base], basic functionalities of contacts, streams and walls,
-  along with users, groups, post and comments
-* {Documents}[https://github.com/ging/social_stream/tree/master/documents], support for
-  activities on files: pictures, audios and videos with a HTML5 player
-* {Events}[https://github.com/ging/social_stream/tree/master/events], sheduled events with calendar
-* {Linkser}[https://github.com/ging/social_stream/tree/master/linkser], advanced management of links to other webpages
-* {Presence}[https://github.com/ging/social_stream/tree/master/presence], XMPP based chat support 
-* {Ostatus}[https://github.com/ging/social_stream/tree/master/ostatus], support for social network federation
-* {Oauth2Server}[https://github.com/ging/social_stream/tree/master/oauth2_server], authentication and authorization service based on {OAuth2}[http://oauth.net/2/]
- 
 = Installation
 
 Add the following to the Gemfile of your Rails application:
@@ -55,15 +37,3 @@ Now migrate your database
 Since {Social Stream}[http://github.com/ging/social_stream] depends on {Devise}[https://github.com/plataformatec/devise], make sure you follow {its setup instructions}[https://github.com/plataformatec/devise/tree/master/lib/generators/templates#readme]. Specifically, make sure you set the default URL options for your environments at <tt>config/environments/*.rb</tt> with something like:
 
   config.action_mailer.default_url_options = { :host => 'localhost:3000' }
-
-= Documentation
-
-{Social Stream's wiki}[https://github.com/ging/social_stream/wiki] covers topics such as deployment howtos, development tips or an explanation of the database schema.
-
-Furthermore, {Social Stream's code documentation is available at rdoc.info}[http://rubydoc.info/gems/social_stream/frames]. Most of the stuff is in {the base gem}[http://rubydoc.info/gems/social_stream-base/frames].
-
-= Discussion and contribution
-
-If you have any questions or issues regarding Social Stream usage, {Social Stream's Google group}[http://groups.google.com/group/social-stream] is a perfect place to share them. Other experienced users of Social Stream will be willing to help you. There exist also a {social-stream tag in StackOverflow}[http://stackoverflow.com/questions/tagged/social-stream]
-
-{Social Stream's issue tracker}[https://github.com/ging/social_stream/issues] is reserved to discuss defects and contributions. Please do not post questions in the issue tracker.
